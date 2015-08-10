@@ -28,7 +28,6 @@
 	<% end %>
 </div>
 
-
 <div id="main_content">
 	<div id="header">
 		<p>All Posts</p>
@@ -42,6 +41,7 @@
 	<% flash.each do |name, msg| %>
 		<%= content_tag(:div, msg, class: "alert") %>
 	<% end %>
+	
 	<%= yield %>
 </div>
 </body>
